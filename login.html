@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 25px; display: flex;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FindaBook</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search a book?" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+                    style="--bs-scroll-height: 100px; margin-left: auto;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./a.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="https://cdn.botpress.cloud/webchat/v5.0/shareable.html?configUrl=https://files.bpcontent.cloud/2026/10/10/06/20261010065821-FVHYB1Y4.json">AI chatbox</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: #496259; font-size: 18px;" id="login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./signup.html" style="color: #1b63cf;">Sign up</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <form action="" id="form">
+
+        <div class="login">
+            <label>Username</label>
+            <input id="username" type="text"/>
+            
+        </div>
+
+        <div class="login">
+            <label>Password</label>
+            <input id="password" type="password" required />
+        </div>
+
+        <div class="login">
+            <div class="remember">
+                <input type="checkbox" id="remember-me" />
+                <label for="remember-me">Remember me?</label>
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row; gap: 5px;">
+            <p>Dont have an acount yet?</p> 
+            <a href="signup.html" style="color: #1b63cf; text-decoration: none;">Sign up</a>
+        </div>
+        
+        <button type="submit">Login</button>
+    </form>
+    </div>
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+    <script src="./js/login.js"></script>
+
+
+</body>
+
+</html>

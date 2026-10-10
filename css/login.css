@@ -1,0 +1,109 @@
+.navbar .btn-outline-success {
+    border: 0px;
+    background-color: #c1d1cb;
+    color: white;
+}
+
+.navbar .btn-outline-success:hover {
+    border: 0px;
+    background-color: #6d7d75;
+    color: #daf2e4;
+}
+
+.d-flex {
+    width: 70%;
+}
+
+body {
+    background-image: linear-gradient(#e7f4f3, #d3eae4d7);
+}
+
+
+#form {
+    width: 40%;
+    margin: 75px auto;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px; 
+    background-color: rgba(255, 255, 255, 0.601);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.107);
+    
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 15px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #A5BAC0;
+    color: white;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+#email {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px black;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.067);
+}
+
+#form {
+    width: 35%;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+#password {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px black;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.067);
+}
+
+#username {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px black;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.067);
+}
+
+@media (max-width: 992px) {
+    #form {
+        width: 70%;
+        padding: 40px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    #form {
+        width: 90%;
+        padding: 25px;
+        margin: 30px auto;
+    }
+
+    .d-flex {
+        width: 100%;
+    }
+}

@@ -1,0 +1,333 @@
+body {
+    background-color: #dee9e7;
+}
+
+.navbar .btn-outline-success {
+    border: 0px;
+    background-color: #c1d1cb;
+    color: white;
+}
+
+.navbar .btn-outline-success:hover {
+    border: 0px;
+    background-color: #6d7d75;
+    color: #daf2e4;
+}
+
+.d-flex {
+    width: 70%;
+}
+
+header {
+    background-color: #DEE9E7;
+    padding: 100px;
+    text-align: center;
+}
+
+.container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 50%;
+    align-items: center;
+}
+
+
+.container button {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 25px;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+
+.box5 {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #eaf1f0;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.box5 form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+}
+
+.box5 .search-input {
+    font-size: 15px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.box5 .search-input:hover {
+    background-color: #d7e5de9f;
+    border-radius: 10px;
+    padding: 15px;
+    height: 75px;
+}
+
+.box5 button {
+    border: none;
+    background-color: #c1d1cb;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border: 1px;
+    background-color: #eaf1f0;
+}
+
+button:hover {
+    background-color: #c3d3cb;
+}
+
+.box5 button:hover {
+    background-color: #93a79d;
+}
+
+.nav-link:hover {
+    font-size: 20px;
+    color: black;
+}
+
+.content {
+    background-color: #edf6f4;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+.carousel-item {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+
+.card-img-top {
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.card-body {
+    height: 110px;
+    background-color: #eefafa
+}
+
+.card-group:hover {
+    height: auto;
+
+    .card-body {
+        height: 110px;
+    }
+}
+
+
+.card-img-top:hover {
+    height: auto;
+}
+
+.author {
+    padding: 100px;
+    margin: 100px;
+    text-align: center;
+    background-color: #ecf6f5b7;
+    border-radius: 15px;
+}
+
+#loading-overlay {
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ddd;
+    border-top: 6px solid #1b63cf;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.genres {
+    margin: 30px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    width: 60%;
+    align-items: center;
+}
+
+.genres button {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 25px;
+    margin: 0;
+    height: 100px;
+    width: 100%;
+}
+
+.box5 {
+    margin: 0;
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container button {
+        width: 100%;
+    }
+
+    header {
+        padding: 50px 20px;
+    }
+
+    .carousel-item {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .author {
+        padding: 50px 20px;
+        margin: 30px;
+    }
+
+    header {
+        padding: 50px 20px;
+    }
+
+    .genres {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box5 {
+        grid-column: span 2;
+    }
+
+    .box5 .search-input {
+        width: 100%;
+    }
+
+    #showsaved {
+        text-align: center;
+        margin: 25px;
+    }
+
+    #savedbooks {
+        margin: 30px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    #savedbooks>* {
+        height: 100%;
+    }
+
+    #savedbooks .card {
+        height: 100%;
+    }
+
+    #savedbooks .card-img-top {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    #savedbooks .card-body {
+        height: auto;
+        min-height: 110px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box5 {
+        grid-column: span 2;
+    }
+
+
+    .d-flex {
+        width: 100%;
+    }
+
+    .carousel-item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    .author {
+        padding: 30px 15px;
+        margin: 15px;
+    }
+
+    .card-img-top {
+        height: 220px;
+    }
+
+    #savedbooks .card-img-top {
+        height: 220px;
+    }
+
+    #savedbooks {
+        font-size: 10px;
+        h5 {
+            font-size: 15px;
+        }
+    }
+
+}
+
+#showsaved {
+    text-align: center;
+    margin: 25px;
+}
+
+#savedbooks {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    align-items: center;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - FindaBook</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/a.css">
+    <style>
+        .unsave {
+            width: 100%;
+            background-color: #b3d6d6;
+            border-radius: 5px;
+        }
+    </style>
+    
+    <script src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2026/10/10/06/20261010065821-UBXAC4HZ.js" defer></script>
+</head>
+ 
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 25px; display: flex;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">FindaBook</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+ 
+                <form class="d-flex" role="search" id="searchbook">
+                    <input class="form-control me-2" type="search" placeholder="Search a book?" aria-label="Search" id="searchinput"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+ 
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+                    style="--bs-scroll-height: 100px; margin-left: auto;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./a.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: #0c0c0c; font-size: 18px;">Saved books</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="https://cdn.botpress.cloud/webchat/v5.0/shareable.html?configUrl=https://files.bpcontent.cloud/2026/10/10/06/20261010065821-FVHYB1Y4.json">AI chatbox</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html" style="color: #119f6d;" id="login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./signup.html" style="color: #1b63cf;" id="signup">Sign up</a>
+                    </li>
+                </ul>
+ 
+            </div>
+        </div>
+    </nav>
+ 
+    <h2 id="showsaved">Saved Books</h2>
+
+    
+
+    <div id="savedbooks"></div>
+
+
+ 
+    <footer style="background-color: #A5BAC0; padding: 100px; margin-top: 100px;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quod facere incidunt expedita odit ipsa, quis beatae rerum eius dolorum deleniti esse laudantium nulla eos hic tenetur pariatur adipisci fuga?</p>
+    </footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="./js/b.js"></script>
+    <script src="./js/saved.js"></script>
+</body>
+ 
+</html>

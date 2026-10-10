@@ -1,0 +1,137 @@
+.navbar .btn-outline-success {
+    border: 0px;
+    background-color: #c1d1cb;
+    color: white;
+}
+
+.navbar .btn-outline-success:hover {
+    border: 0px;
+    background-color: #6d7d75;
+    color: #daf2e4;
+}
+
+.d-flex {
+    width: 70%;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.a {
+    background-color: #E1EEED;
+    padding: 50px;
+}
+
+.b {
+    background-color: #E7F3F2;
+    padding: 50px;
+}
+
+.content {
+    background-color: #edf6f4;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+
+.card-img-top {
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.card-body {
+    height: 110px;
+    background-color: #eefafa
+}
+
+.card-group:hover {
+    height: auto;
+    .card-body {
+        height: 110px;
+    }
+}
+
+
+.card-img-top:hover {
+    height: auto;
+}
+
+.carousel-item {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+        #loading-overlay {
+            background: rgba(255, 255, 255, 0.9);
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+            position: fixed;
+            top: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #ddd;
+            border-top: 6px solid #1b63cf;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+#saved:hover {
+    background-color: #4f7670;
+}
+
+.saved {
+    background-color: #cae9e1;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-direction: row;
+    grid-template-rows: repeat(5,1fr);
+}
+
+@media (max-width: 992px) {
+    footer {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .a {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .b {
+        padding: 20px;
+    }
+
+    .d-flex {
+        width: 100%;
+    }
+}
